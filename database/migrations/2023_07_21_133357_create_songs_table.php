@@ -18,6 +18,8 @@ return new class extends Migration
             $table -> id();
 
             $table -> string("title");
+            $table -> boolean("published", 1);
+            $table -> decimal('price', $precision = 4, $scale = 2);
 
             $table -> timestamps();
         });
