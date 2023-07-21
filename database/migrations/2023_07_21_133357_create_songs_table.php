@@ -14,9 +14,11 @@ return new class extends Migration
     public function up()
     {
         Schema::create('songs', function (Blueprint $table) {
+
             $table -> id();
 
             $table -> string("title");
+            $table -> integer("number_copies");
 
             $table -> timestamps();
         });
