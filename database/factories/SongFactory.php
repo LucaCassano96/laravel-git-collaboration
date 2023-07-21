@@ -19,7 +19,8 @@ class SongFactory extends Factory
         return [
 
             'title' => fake() -> word(),
-            "number_copies" => fake() -> randomNumber(7, false)
+            "number_copies" => fake() -> randomNumber(7, false),
+            "song_duration" => fake() -> randomDigit()
             ];
 
     }
