@@ -15,11 +15,13 @@ return new class extends Migration
     {
         Schema::create('songs', function (Blueprint $table) {
 
-            $table -> id();
+            $table->id();
 
-            $table -> string("title");
+            $table->string("title");
+            $table->string('artist');
+            $table->date('exit_date');
 
-            $table -> timestamps();
+            $table->timestamps();
         });
     }
 
