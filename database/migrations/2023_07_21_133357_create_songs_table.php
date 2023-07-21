@@ -24,6 +24,7 @@ return new class extends Migration
             $table->date('exit_date');
             $table -> boolean("published", 1);
             $table -> decimal('price', $precision = 4, $scale = 2);
+            $table -> string("song_duration");
 
             $table->timestamps();
         });

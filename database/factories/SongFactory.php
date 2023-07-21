@@ -24,7 +24,8 @@ class SongFactory extends Factory
             "artist" => fake()->name(),
             "exit_date" => fake()->date(),
             'published' => fake() -> numberBetween(0, 1),
-            'price' => fake() -> randomFloat(2, 1, 50)
+            'price' => fake() -> randomFloat(2, 1, 50),
+            "song_duration" => fake() -> randomDigit()
         ];
 
     }
