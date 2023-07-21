@@ -22,7 +22,10 @@ class SongFactory extends Factory
             "lyrics" => fake()->paragraph(3, true),
             "thumb" => fake()->imageUrl(640, 480, 'animals', true),
             "artist" => fake()->name(),
-            "exit_date" => fake()->date()
+            "exit_date" => fake()->date(),
+            'published' => fake() -> numberBetween(0, 1),
+            'price' => fake() -> randomFloat(2, 1, 50)
         ];
+
     }
 }

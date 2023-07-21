@@ -22,6 +22,8 @@ return new class extends Migration
             $table->text("thumb");
             $table->string('artist');
             $table->date('exit_date');
+            $table -> boolean("published", 1);
+            $table -> decimal('price', $precision = 4, $scale = 2);
 
             $table->timestamps();
         });
