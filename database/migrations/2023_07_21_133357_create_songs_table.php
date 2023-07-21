@@ -18,7 +18,6 @@ return new class extends Migration
             $table -> id();
 
             $table -> string("title");
-            $table -> integer("number_copies");
 
             $table -> timestamps();
         });
