@@ -19,9 +19,15 @@ class SongFactory extends Factory
     {
         return [
 
-            'title' => fake() -> word(),
-            "number_copies" => fake() -> randomNumber(7, false)
-            ];
+            'title' => fake()->word(),
+            "lyrics" => fake()->paragraph(3, true),
+            "thumb" => fake()->imageUrl(640, 480, 'animals', true),
+            "artist" => fake()->name(),
+            "exit_date" => fake()->date(),
+            'published' => fake() -> numberBetween(0, 1),
+            'price' => fake() -> randomFloat(2, 1, 50),
+            "song_duration" => fake() -> randomDigit()
+        ];
 
     }
 }
