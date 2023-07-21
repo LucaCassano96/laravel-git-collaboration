@@ -18,6 +18,8 @@ return new class extends Migration
             $table -> id();
 
             $table -> string("title");
+            $table -> text("lyrics");
+            $table -> text("thumb");
 
             $table -> timestamps();
         });

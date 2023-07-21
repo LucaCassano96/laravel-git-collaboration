@@ -19,7 +19,8 @@ class SongFactory extends Factory
         return [
 
             'title' => fake() -> word(),
-            "number_copies" => fake() -> randomNumber(7, false)
+            "lyrics"=> fake() -> paragraph(3, true),
+            "thumb" => fake() -> imageUrl(640, 480, 'animals', true),
             ];
 
     }
